@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app id="WebApp_ID">
+	<display-name>SASshop</display-name>
+	<servlet>
+		<servlet-name>logoin</servlet-name>
+		<display-name>logoin</display-name>
+		<description></description>
+		<servlet-class>servlet.logoin</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>register</servlet-name>
+		<display-name>register</display-name>
+		<description></description>
+		<servlet-class>servlet.register</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>buy</servlet-name>
+		<display-name>buy</display-name>
+		<description></description>
+		<servlet-class>servlet.buy</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>gobuy</servlet-name>
+		<display-name>gobuy</display-name>
+		<description></description>
+		<servlet-class>servlet.gobuy</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>addgoods</servlet-name>
+		<display-name>addgoods</display-name>
+		<description></description>
+		<servlet-class>servlet.addgoods</servlet-class>
+	</servlet>
+  <servlet>
+    <servlet-name>delete</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>servlet.delete</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AuthImageServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>servlet.AuthImageServlet</servlet-class>
+  </servlet>
+
+
+ 
+
+	<servlet-mapping>
+		<servlet-name>logoin</servlet-name>
+		<url-pattern>/logoin</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>register</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>buy</servlet-name>
+		<url-pattern>/buy</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>gobuy</servlet-name>
+		<url-pattern>/gobuy</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>addgoods</servlet-name>
+		<url-pattern>/addgoods</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>delete</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AuthImageServlet</servlet-name>
+    <url-pattern>/AuthImageServlet</url-pattern>
+  </servlet-mapping>
+  
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
